@@ -1,16 +1,15 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
-import { RouteRecordRaw } from 'vue-router';
-import HomePage from '../views/HomePage.vue'
+import FormComponents from '../views/FormComponents.vue'
 
-const routes: Array<RouteRecordRaw> = [
+const routes = [
   {
     path: '/',
-    redirect: '/home'
+    redirect: '/formulario'
   },
   {
-    path: '/home',
-    name: 'Home',
-    component: HomePage
+    path: '/formulario',
+    name: 'Formulario',
+    component: FormComponents
   }
 ]
 
